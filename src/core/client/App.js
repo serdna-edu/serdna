@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.scss';
+import Header from "./ui/component/Header/Header";
+import SideBar from "./ui/component/SideBar/SideBar";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="App container-fluid ml-0 mr-0 h-100">
+        <div className="row h-100">
+          <SideBar/>
+          <main className="main d-flex flex-column col pl-0 pr-0">
+            <Header class={"col d-flex"}/>
+          </main>
+        </div>
       </div>
     );
   }

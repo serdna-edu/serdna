@@ -1,0 +1,34 @@
+@import "../SideBar";
+
+$side-bar-item-height: 50px;
+$side-bar-item-icon-padding: 5px;
+$side-bar-item-icon-width: $side-bar-item-height - 2 * $side-bar-item-icon-padding;
+$side-bar-item-icon-height: $side-bar-item-height - 2 * $side-bar-item-icon-padding;
+
+.nav-item.serdna-side-bar-item {
+  text-align: left;
+  white-space: nowrap;
+  height: $side-bar-item-height;
+
+  .nav-link {
+    padding: 0px;
+
+    .serdna-side-bar-item__icon {
+      width: $side-bar-item-icon-width;
+      height: $side-bar-item-icon-height;
+      padding: $side-bar-item-icon-padding;
+
+      // Don't include the margin in the size.
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+
+    color: $gray-400;
+
+    &.active, &:hover {
+      color: $dark;
+      background: $gray-300;
+    }
+  }
+}

@@ -1,1 +1,5 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "./mixins";
+
+// TODO: Deal with UHD cases.
+$header-height: 50px;

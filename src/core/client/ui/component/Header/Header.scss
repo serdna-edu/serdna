@@ -1,0 +1,10 @@
+@import "../../../../css/main";
+
+header.serdna {
+  flex: 0 0 $header-height;
+  background-color: $dark;
+
+  > h2 {
+    color: $light;
+  }
+}

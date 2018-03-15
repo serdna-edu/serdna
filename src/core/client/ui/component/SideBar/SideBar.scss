@@ -1,0 +1,66 @@
+@import "../../../../css/main";
+
+$side-bar-width: 180px;
+$side-bar-width-collapsed: 50px;
+$side-bar-width-collapsed-duration: 0.4s;
+$side-bar-logo-height: 50px;
+
+aside.serdna.navbar {
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: $dark;
+
+  &.collapse {
+    width: $side-bar-width-collapsed;
+    @include transition(width $side-bar-width-collapsed-duration);
+
+    .serdna-logo .serdna-logo__text {
+      display: none;
+
+      &.serdna-logo__text-collapse {
+        display: flex;
+      }
+    }
+  }
+
+  &.collapse.show {
+    display: flex;
+    width: $side-bar-width;
+
+    .serdna-logo .serdna-logo__text {
+      display: flex;
+
+      &.serdna-logo__text-collapse {
+        display: none;
+      }
+    }
+  }
+
+  .serdna-logo {
+    background-color: $white;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: $side-bar-logo-height;
+
+    @at-root #{&}__text {
+      color: $black;
+      @extend .navbar-brand;
+    }
+  }
+
+  .serdna-side-bar-list {
+    background-color: $dark;
+    flex-grow: 1;
+
+    .serdna-side-bar-list__separator {
+      display: flex;
+      flex: 1;
+    }
+
+    &.serdna-side-bar-list--bottom {
+      flex-shrink: 1;
+      flex-grow: 0;
+    }
+  }
+}

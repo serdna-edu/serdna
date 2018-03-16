@@ -1,3 +1,4 @@
+import { isString, isFunction, noop } from 'lodash';
 import React, {Component} from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
@@ -15,7 +16,9 @@ class SideBarItem extends Component {
         <a className={[
           'nav-link d-flex flex-row align-items-center h-100',
           this.props.active ? 'active' : ''
-        ].join(' ')} href="#" onClick={this.props.onClick}>
+        ].join(' ')}
+           href={ isString(this.props.href) ? this.props.href : '#' }
+           onClick={ isFunction(this.props.onClick) ? this.props.onClick : noop }>
           <FontAwesomeIcon icon={this.props.icon}
                            className='serdna-side-bar-item__icon d-flex'
                            size="lg" />

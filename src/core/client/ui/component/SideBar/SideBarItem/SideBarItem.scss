@@ -1,7 +1,7 @@
 @import "../SideBar";
 
 $side-bar-item-height: 50px;
-$side-bar-item-icon-padding: 5px;
+$side-bar-item-icon-padding: 10px;
 $side-bar-item-icon-width: $side-bar-item-height - 2 * $side-bar-item-icon-padding;
 $side-bar-item-icon-height: $side-bar-item-height - 2 * $side-bar-item-icon-padding;
 
@@ -22,6 +22,10 @@ $side-bar-item-icon-height: $side-bar-item-height - 2 * $side-bar-item-icon-padd
       -webkit-box-sizing: content-box;
       -moz-box-sizing: content-box;
       box-sizing: content-box;
+    }
+
+    .serdna-side-bar-item__text {
+      //font-size: 1.2em;
     }
 
     color: $gray-400;

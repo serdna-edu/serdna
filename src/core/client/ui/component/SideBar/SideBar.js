@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 // Fontawesome icons.
 import faChevronCircleLeft from '@fortawesome/fontawesome-free-solid/faChevronCircleLeft';
 import faChevronCircleRight from '@fortawesome/fontawesome-free-solid/faChevronCircleRight';
+import faHome from '@fortawesome/fontawesome-free-solid/faHome';
 
 import './SideBar.scss'
 import SideBarItem from "./SideBarItem/SideBarItem";
@@ -50,7 +51,10 @@ class SideBar extends Component {
             'nav flex-column w-100'
           ].join(' ')
         }>
-
+          <SideBarItem icon={faHome}
+                       label="Dashboard"
+                       collapsed={this.state.collapsed}
+                       href='/dashboard'/>
         </ul>
 
         <ul className={
@@ -59,7 +63,6 @@ class SideBar extends Component {
             'nav flex-column w-100'
           ].join(' ')
         }>
-          <div className="serdna-side-bar-list__separator" />
           <SideBarItem icon={this.state.collapsed ? faChevronCircleRight : faChevronCircleLeft}
                        label="Collapse"
                        collapsed={this.state.collapsed}

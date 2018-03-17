@@ -63,13 +63,15 @@
     "concurrently": "^3.5.1",
     "node-sass": "^4.7.2",
     "nodemon": "^1.14.12",
+    "sass-lint": "^1.12.1",
     "sass-loader": "^6.0.6"
   },
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "eslint": "node ./node_modules/eslint/bin/eslint.js src/**"
+    "eslint": "node ./node_modules/eslint/bin/eslint.js src/**",
+    "sasslint": "node ./node_modules/sass-lint/bin/sass-lint.js -v"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -113,5 +115,8 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "pre-commit": [ "eslint" ]
+  "pre-commit": [
+    "eslint",
+    "sasslint"
+  ]
 }

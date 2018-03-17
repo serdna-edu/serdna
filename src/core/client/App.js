@@ -20,7 +20,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App container-fluid ml-0 mr-0 h-100">
+      <div className="serdna-app container-fluid ml-0 mr-0 h-100">
         <div className="row h-100">
           <SideBar/>
           <main className="d-flex flex-column col pl-0 pr-0 h-100">

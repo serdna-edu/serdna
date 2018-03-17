@@ -1,33 +1,33 @@
-.App {
+.serdna-app {
   text-align: center;
 }
 
-.App-logo {
+.serdna-app-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
-.App-header {
+.serdna-app-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
-.App-title {
+.serdna-app-title {
   font-size: 1.5em;
 }
 
-.App-intro {
+.serdna-app-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+@keyframes serdna-app-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
-.App__main-content {
+.serdna-app__main-content {
   height: 100%;
   overflow: auto;
 }

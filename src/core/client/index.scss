@@ -1,11 +1,11 @@
 @import "../css/main";
 
 body {
+  @extend %m-0;
+  @extend %p-0;
+
   height: 100vh;
   overflow: hidden;
-
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
 
   #root {

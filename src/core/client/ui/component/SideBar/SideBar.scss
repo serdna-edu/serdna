@@ -11,8 +11,8 @@ aside.serdna.navbar {
   background-color: $dark;
 
   &.collapse {
-    width: $side-bar-width-collapsed;
     @include transition(width $side-bar-width-collapsed-duration);
+    width: $side-bar-width-collapsed;
 
     .serdna-logo .serdna-logo__text {
       display: none;
@@ -44,8 +44,8 @@ aside.serdna.navbar {
     height: $side-bar-logo-height;
 
     @at-root #{&}__text {
+      @extend %navbar-brand;
       color: $black;
-      @extend .navbar-brand;
     }
   }
 

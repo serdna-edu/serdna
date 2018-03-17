@@ -11,7 +11,7 @@ class CourseCard extends Component {
           this.props.className
         ].join(' ')
       } style={{width: '18rem'}}>
-        <img className="card-img-top" src="/logo.svg" alt="Card image cap"/>
+        <img className="card-img-top" src="/logo.svg" alt="Course art"/>
         <div className="card-body">
           <h5 className="card-title">Course Name</h5>
           <p className="card-text">Course Description</p>

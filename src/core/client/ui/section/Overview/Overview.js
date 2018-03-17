@@ -4,8 +4,8 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faClipboardCheck from '@fortawesome/fontawesome-free-solid/faClipboardCheck';
 import faSun from '@fortawesome/fontawesome-free-solid/faSun';
 
-import CourseCard from "./component/CourseCard/CourseCard";
-import TimelineEventItem from "./component/TimelineEventItem/TimelineEventItem";
+import CourseCard from './component/CourseCard/CourseCard';
+import TimelineEventItem from './component/TimelineEventItem/TimelineEventItem';
 
 import './Overview.scss';
 
@@ -34,7 +34,7 @@ class Overview extends Component {
             <div class="container">
               <div className={'d-flex align-items-end'}>
                 <h1 class="d-flex text-left display-4">Good Morning User</h1>
-                <FontAwesomeIcon style={{color: "#FFCC00"}} icon={faSun} className='ml-4 d-flex align-self-baseline' size="6x" />
+                <FontAwesomeIcon style={{color: '#FFCC00'}} icon={faSun} className='ml-4 d-flex align-self-baseline' size="6x" />
               </div>
 
               <div className={'row'}>

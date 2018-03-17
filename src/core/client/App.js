@@ -31,7 +31,7 @@ class App extends Component {
                      render={props => <Header {...props} className={'col d-flex'} />} />
             </Switch>
 
-            <div className={'container-fluid App__main-content'}>
+            <div className={'container-fluid serdna-app__main-content'}>
               <div className={'row'}>
                 <div className={'col-12'}>
                   <Switch>

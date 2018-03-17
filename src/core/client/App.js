@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import './App.scss';
 import Header from './ui/component/Header/Header';
@@ -20,7 +20,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App container-fluid ml-0 mr-0 h-100">
+      <div className="serdna-app container-fluid ml-0 mr-0 h-100">
         <div className="row h-100">
           <SideBar/>
           <main className="d-flex flex-column col pl-0 pr-0 h-100">
@@ -28,7 +28,7 @@ class App extends Component {
               <Route exact path="/"
                      render={() => <Redirect to="/dashboard"/>} />
               <Route exact path="/:section"
-                     render={props => <Header {...props} className={"col d-flex"} />} />
+                     render={props => <Header {...props} className={'col d-flex'} />} />
             </Switch>
 
             <div className={'container-fluid App__main-content'}>
@@ -40,7 +40,6 @@ class App extends Component {
                 </div>
               </div>
             </div>
-
           </main>
         </div>
       </div>

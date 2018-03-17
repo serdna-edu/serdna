@@ -5,8 +5,8 @@ import faChevronCircleLeft from '@fortawesome/fontawesome-free-solid/faChevronCi
 import faChevronCircleRight from '@fortawesome/fontawesome-free-solid/faChevronCircleRight';
 import faHome from '@fortawesome/fontawesome-free-solid/faHome';
 
-import './SideBar.scss'
-import SideBarItem from "./SideBarItem/SideBarItem";
+import './SideBar.scss';
+import SideBarItem from './SideBarItem/SideBarItem';
 
 class SideBar extends Component {
   constructor(props) {
@@ -25,9 +25,9 @@ class SideBar extends Component {
       <aside className={
         [
           'serdna',
-          "navbar navbar-expand navbar-dark flex-column sentinel-ui-header",
-          "p-0",
-          "h-100",
+          'navbar navbar-expand navbar-dark flex-column sentinel-ui-header',
+          'p-0',
+          'h-100',
           this.state.collapsed ? 'collapse' : 'collapse show',
           this.props.class
         ].join(' ')

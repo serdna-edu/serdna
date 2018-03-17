@@ -11,8 +11,8 @@ class Header extends Component {
 
     return (
       <header className={[
-        "serdna",
-        "navbar navbar-expand navbar-dark",
+        'serdna',
+        'navbar navbar-expand navbar-dark',
         this.props.className
       ].join(' ')}>
         <h2 className="text-white">{sectionNameFormatted}</h2>

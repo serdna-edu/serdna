@@ -1,14 +1,14 @@
 @import "../css/main";
 
 body {
-  @extend %m-0;
-  @extend %p-0;
+  @extend .m-0;
+  @extend .p-0;
 
   height: 100vh;
   overflow: hidden;
   font-family: sans-serif;
 
-  #root {
+  #root {  // sass-lint:disable-line no-ids
     height: 100%;
   }
 }

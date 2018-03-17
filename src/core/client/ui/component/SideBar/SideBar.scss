@@ -44,7 +44,7 @@ aside.serdna.navbar {
     height: $side-bar-logo-height;
 
     @at-root #{&}__text {
-      @extend %navbar-brand;
+      @extend .navbar-brand;
       color: $black;
     }
   }
